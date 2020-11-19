@@ -1,0 +1,75 @@
+/*Cabeçalho - Início*/
+.header{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    border: 0px;
+    min-width: 100%;
+    background: #918e8e;
+    max-height: 100px;
+}
+/*Cabeçalho - Início*/
+
+/*Section 1 - Início*/
+.sessao-1{
+    padding: 0px 2px;
+    padding-top: 1%;
+}
+/*Section 1 - Fim*/
+
+/*Input camp + button - Início*/
+.input{
+    margin-bottom: 1%;
+    margin-right: 0.5%;
+
+}
+#custom-search-input{
+    padding: 0px;
+    border: solid 1px #751212;
+    border-radius: 6px;
+    background-color: #7a5b5b;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #6e0303;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px rgb(175, 11, 11);
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+/*Input camp + button - Fim*/
+
+/*Menu Principal - Início*/
+
+.menu-principal-nav a{
+    font-size: 1.8em;
+    color: black;
+}
+
+/*Menu Principal - Fim*/
+
+/*Logo - Início*/
+
+/*Logo - Fim*/
+
+/*Corpo - Início*/
+.titulo{
+    padding-bottom: 1%;
+}
+/*Corpo - Fim*/
