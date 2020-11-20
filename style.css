@@ -11,8 +11,8 @@
 
 /*Section 1 - Início*/
 .sessao-1{
-    padding: 0px 2px;
-    padding-top: 1%;
+    /* padding: 0px 2px;
+    padding-top: 1%; */
 }
 /*Section 1 - Fim*/
 
@@ -73,3 +73,12 @@
     padding-bottom: 1%;
 }
 /*Corpo - Fim*/
+
+.navigation {
+    z-index: 1;
+}
+
+.logo-img {
+    width: 13%;
+    height: 11%;
+}

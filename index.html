@@ -6,27 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Eboli Filmes</title>
         <!--CSS do Bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><!--Adaptação de fontes de escrita-->
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <!--CSS do input camp-->
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="style.css">
+        <!--JS do Bootstrap-->
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
     </head>
 
     <body>
         <!--Cabeçalho-->
         <header class="container header">         
-            <section class="row sessao-1">
-                <div class="col-2 logo">
+            <section class="sessao-1">
+                <!-- <div class="col-2 logo"> -->
                     <!--Img da logo-->
-                    <img src="imgs/Logo-diw.png" height="80px" width="150px">
-                </div>
+                    <!-- <img src="imgs/Logo-diw.png" height="80px" width="150px">
+                </div> -->
                 
                 <!--Menu Bootstrap-->
-                <div class="col-6 menu-principal-div">
+                <!-- <div class="col-6 menu-principal-div">
                     <nav class="nav menu-principal-nav">
                         <a class="nav-link active" href="#">Lançamentos | </a>                    
                         <a class="nav-link" href="#">avaliações | </a>
@@ -34,9 +33,9 @@
                         <a class="nav-link" href="#">Entrevistas & makingof | </a>
                         <a class="nav-link" href="#">novidades</a>
                     </nav>
-                </div>
+                </div> -->
                 <!--Campo e botão de pesquisa-->
-                <div class="col-3 input ">
+                <!-- <div class="col-3 input ">
                     <div id="custom-search-input">
                         <div class="input-group col-md-12">
                             <input type="text" class="form-control input-lg" placeholder="Buscar" />
@@ -47,7 +46,38 @@
                             </span>
                         </div>
                     </div>
-                </div>
+                </div> -->
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+                    <img class="logo-img" src="imgs/Logo-diw.png">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">avaliações</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">em destaque</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Entrevistas & makingof</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">novidades</a>
+                          </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
             
             </section>
             
@@ -55,13 +85,13 @@
 
         <main class="container conteudo-principal">
             <!--Título da página - ocupa uma sessao inteira de 12 colunas-->
-            <section class="row lancamentos-titulo">
+            <section class="lancamentos-titulo">
                 <div class=" titulo">
                     <h1>Lançamentos</h1>
                 </div>
             </section>
             <!--Vídeo+Informações - Bootstrap - Carousel-->
-            <section class="row video-informacoes">
+            <section class="video-informacoes">
                 <div class="">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -71,7 +101,7 @@
                         </ol>
                         <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gaBdgu00otE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/gaBdgu00otE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="..." alt="Second slide">
