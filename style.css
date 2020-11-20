@@ -70,10 +70,14 @@
     padding-bottom: 1%;
 }
 .item{
-    display: flex;
+
 }
-.sub-item{
+.sub-item-1{
     width: 50%;
+    float: left;
+}
+.sub-item-2{
+    float: right;
 }
 /*Corpo - Fim*/
 
