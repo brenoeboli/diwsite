@@ -10,10 +10,7 @@
 /*Cabeçalho - Início*/
 
 /*Section 1 - Início*/
-.sessao-1{
-    /* padding: 0px 2px;
-    padding-top: 1%; */
-}
+
 /*Section 1 - Fim*/
 
 /*Input camp + button - Início*/
@@ -71,6 +68,12 @@
 /*Corpo - Início*/
 .titulo{
     padding-bottom: 1%;
+}
+.item{
+    display: flex;
+}
+.sub-item{
+    width: 50%;
 }
 /*Corpo - Fim*/
 
