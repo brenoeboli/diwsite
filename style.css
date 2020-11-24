@@ -70,10 +70,11 @@
     padding-bottom: 1%;
 }
 .item{
-    display: flex;
+  /* display: table; */
 }
 .sub-item{
-    width: 50%;
+    position: relative;
+    /* width: 50%;  */
 }
 /*Corpo - Fim*/
 
