@@ -19,38 +19,6 @@
     margin-right: 0.5%;
 
 }
-#custom-search-input{
-    padding: 0px;
-    border: solid 1px #751212;
-    border-radius: 6px;
-    background-color: #7a5b5b;
-}
-
-#custom-search-input input{
-    border: 0;
-    box-shadow: none;
-}
-
-#custom-search-input button{
-    margin: 2px 0 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: #6e0303;
-    padding: 0 8px 0 10px;
-    border-left: solid 1px #ccc;
-}
-
-#custom-search-input button:hover{
-    border: 0;
-    box-shadow: none;
-    border-left: solid 1px rgb(175, 11, 11);
-}
-
-#custom-search-input .glyphicon-search{
-    font-size: 23px;
-}
-/*Input camp + button - Fim*/
 
 /*Menu Principal - Início*/
 
@@ -66,23 +34,64 @@
 /*Logo - Fim*/
 
 /*Corpo - Início*/
-.titulo{
-    padding-bottom: 1%;
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.titulo--em-destaque{
+    display: grid;
+    align-items: cente
 }
 .item{
-  /* display: table; */
+    padding: 5% 0%;
 }
-.sub-item{
-    position: relative;
-    /* width: 50%;  */
+.item-text {
+    display: flex;
+    justify-content: space-between;
+}
+.item-descriptio {
+    font-size: 13px;
+}
+
+.sub-item-1{
+    width: 50%;
+    float: left;
+}
+.sub-item-2{
+    float: right;
 }
 /*Corpo - Fim*/
 
 .navigation {
     z-index: 1;
+    background-color: #b9b7b7;
 }
 
 .logo-img {
-    width: 13%;
+    width: 8%;
     height: 11%;
+}
+
+.section-color--gray-light {
+    
+    background-color: #f1ebeb;
+
+}
+
+.font-title {
+    font-weight: 700;
+}
+
+.lancamentos-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 115px;
+}
+
+@media (max-width:990){
+
 }
