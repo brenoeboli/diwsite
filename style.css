@@ -92,6 +92,59 @@
     min-height: 115px;
 }
 
-@media (max-width:990){
+.container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
 
+.em-destaque  {
+    padding: 5% 0%;
+}
+
+.em-destaque-img {
+    max-width: 240px;
+    width: auto;
+    height: 345px;
+    padding: 15px;
+}
+
+.container-carregar-filme{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-avaliacoes {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.card--avaliacoes{
+    display: grid;
+    max-width: 280px;
+    grid-template-columns: 1fr 5fr;
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+}
+
+.card-description{
+    padding: 10px;
+}
+
+
+.icon--user{
+    max-width: 40px;
+    border: 8px solid #ccc5c5;
+    border-radius: 20px;
+}
+
+@media (max-width: 790px) {
+    .logo-img {
+        width: 20%;
+        height: 11%;
+    }
 }
