@@ -126,6 +126,11 @@
     grid-template-columns: 1fr 5fr;
 }
 
+.card--novidades {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
 .card-top {
     display: flex;
     align-items: center;
@@ -142,9 +147,42 @@
     border-radius: 20px;
 }
 
-@media (max-width: 790px) {
+.container-entrevista{
+    display: flex;
+    margin: 20px 0px;
+}
+
+.container-novidades{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.footer {
+    padding: 5%;
+}
+
+@media (max-width: 790px){
     .logo-img {
         width: 20%;
         height: 11%;
     }
+
+
+}
+
+@media (min-width: 0px){
+    /* .titulo--em-destaque .content-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+    } */
+}
+
+@media (min-width: 961px){
+    /* .content-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 102px;
+       
+    } */
 }
