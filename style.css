@@ -1,3 +1,40 @@
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:21px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
 /*Cabeçalho - Início*/
 .header{
     margin: 0px 0px;
@@ -82,7 +119,12 @@
 }
 
 .font-title {
+    padding: 0% 1.5%;
     font-weight: 700;
+}
+
+.content-top .font-title {
+    padding: 0;
 }
 
 .lancamentos-titulo {
@@ -94,7 +136,7 @@
 
 .container-img{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 20px 0px;
 }
@@ -114,13 +156,18 @@
     display: flex;
     justify-content: flex-end;
 }
+.sub-title--avaliacoes{
+    position: relative;
+    top: 3px;
+}
 
 .container-avaliacoes {
     display: flex;
     margin: 20px 0px;
+    justify-content: space-between;
 }
 
-.card--avaliacoes{
+.card--avaliacoes {
     display: grid;
     max-width: 280px;
     grid-template-columns: 1fr 5fr;
@@ -129,6 +176,7 @@
 .card--novidades {
     display: grid;
     grid-template-columns: 2fr 5fr;
+    align-items: center;
 }
 
 .card-top {
@@ -136,8 +184,12 @@
     align-items: center;
 }
 
-.card-description{
+.card-description {
     padding: 10px;
+}
+
+.card-title {
+    font-weight: 800;
 }
 
 
@@ -150,15 +202,35 @@
 .container-entrevista{
     display: flex;
     margin: 20px 0px;
+    justify-content: space-between;
 }
 
 .container-novidades{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 5fr 3fr;
+    /* grid-template-columns: 3fr 1fr; */
+}
+
+.novidades {
+    padding: 5% 0%;
+}
+
+.novidades-img {
+    max-width: 244px;
+    border: 1px solid gray;
+}
+
+.novidades--description {
+    font-size: 13px;
 }
 
 .footer {
     padding: 5%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width: 790px){
@@ -179,10 +251,13 @@
 }
 
 @media (min-width: 961px){
-    /* .content-top {
+     .content-top {
+        /* display: flex;
+        justify-content: space-between;
+        padding: 0px 102px; */
         display: flex;
         justify-content: space-between;
-        padding: 0px 102px;
-       
-    } */
+        padding: 0% 1.5%;
+    } 
+
 }
