@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="style.css" />
     <!--JS do Bootstrap-->
     <script type="text/javascript" src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   </head>
@@ -25,7 +25,7 @@
   <body>
     <!--Cabeçalho-->
     <header class="container header">
-      <section class="sessao-1">
+      <section class="sessao-1" id="S0">
         <nav class="navbar navbar-expand-lg navbar-light navigation">
           <img class="logo-img" src="assets/imgs/Logo-diw.png" />
           <button
@@ -43,19 +43,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Lançamentos</a>
+                <a class="nav-link" href="#S1">Lançamentos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">avaliações</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#">em destaque</a>
+                <a class="nav-link" href="#S2">avaliações</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Entrevistas & makingof</a>
+                <a class="nav-link" href="#S3">em destaque</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">novidades</a>
+                <a class="nav-link" href="#S4">Entrevistas & makingof</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#S5">novidades</a>
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -85,7 +85,7 @@
         </div>
       </section>
       <!--Vídeo+Informações - Bootstrap - Carousel-->
-      <section class="video-informacoes section-color--gray-light">
+      <section class="video-informacoes section-color--gray-light" id="S1">
         <div class="container">
           <div
             id="carouselExampleControls"
@@ -232,7 +232,7 @@
           </div>
         </div>
       </section>
-      <section class="em-destaque container">
+      <section class="em-destaque container" id="S2">
         <div class="titulo--em-destaque">
           <span class="content-top">
             <h2 class="font-title">Em Destaque</h2>
@@ -287,7 +287,7 @@
           </div>
         </div>
       </section>
-      <section class="em-destaque container">
+      <section class="em-destaque container" id="S3">
         <div class="titulo--em-destaque">
           <h2 class="font-title">Últimas avaliações</h2>
 
@@ -380,7 +380,7 @@
           </div>
         </div>
       </section>
-      <section class="em-destaque section-color--gray-light">
+      <section class="em-destaque section-color--gray-light" id="S4">
         <div class="container">
           <div class="titulo--entrevista-makingof">
             <h2 class="font-title">Entrevistas e making of</h2>
@@ -444,7 +444,7 @@
         </div>
         
       </section>
-      <section class="novidades">
+      <section class="novidades" id="S5">
         <div class="container-novidades container">
           <main> 
             <div class="titulo--novidades">
